@@ -189,6 +189,7 @@ header, body, div, main{
     margin-bottom: 15px;
     border-radius: 10px; 
     outline: 1px solid rgb(100, 89, 89);
+    user-select: none;
 }
 
 .draggable{
