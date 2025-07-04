@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 header, body, div, main{
@@ -200,7 +201,6 @@ header, body, div, main{
     cursor:  grab;
     transition: transform 0.3s;
     outline: 1px solid rgb(100, 89, 89);
-    user-select: none;
     
 }
 
