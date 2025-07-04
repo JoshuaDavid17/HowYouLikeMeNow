@@ -1,0 +1,230 @@
+:root{
+
+    --color-TCtext: black;
+    --color-TCheader:white; 
+  
+}
+
+body{
+
+    background-image: url(../img/sunset.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/*** HEADER ****/
+.header{
+
+    background-color:rgba(0, 0, 0, 0.342);
+    color: var(--color-TCheader);
+
+}
+
+
+.text{
+
+    background-color: rgb(235, 138, 12);
+    color:var(--color-TCtext);
+}
+
+/**THEME**/
+
+.theme p{
+  
+    background-color: rgb(235, 138, 12);
+    color: white;
+
+}
+
+.tema__list > li{
+    
+    color: white;
+}
+
+
+.tema__list > li:hover{
+
+    background-color: white;
+    color: black;
+   
+}
+ 
+/**AUDIO**/
+
+.container__audio{
+
+    background-color:rgba(0, 0, 0, 0.342);
+    
+}
+
+/***MAIN***/
+
+.letter__container{
+
+    outline: 3px solid rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+   background-color: rgba(255, 255, 255, 0.219);
+
+}
+
+.draggable{
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 138, 12);
+    position: relative;
+    animation: mov 1.5s alternate infinite;
+     
+}
+
+@keyframes mov{
+
+    to{
+ 
+        transform: translateY(-2px);
+    }from{
+
+        
+         
+        transform: translateY(2px);
+    }
+}
+
+.draggable::before{
+
+    content: " ";
+    top: 110%;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: width .2s linear;
+}
+
+.draggable:hover::before{
+
+    width: 100%;
+}
+
+.dropzone{
+
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.253);
+    outline:  2px solid black;
+    
+
+}
+ 
+.dropzone::before {
+
+    color: white;
+    
+}
+
+
+
+/**----BOTON ESTROFAS---**/
+
+
+.verify__estrofa{
+
+    outline: 2px solid  rgb(7, 245, 7);
+    background-color: rgba(115, 250, 115, 0.411);
+    position: relative;
+   
+}
+
+.verify__estrofa::before{
+
+    content: "✔️";
+    font-size: 1.5em;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    opacity: 0;
+    transition: opacity .2s, top .2s ease-out;
+    
+}
+
+.verify__estrofa:hover::before{
+
+    top: -5%;
+    opacity: 1;
+}
+
+.verify__estrofa:hover{
+
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+}
+
+
+/**----BOTONES---**/
+.btn{
+ 
+    color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+#verify-button{
+
+    background-color: rgba(241, 214, 163, 0.5);
+    outline: 2px solid rgb(226, 195, 17);
+
+}
+
+#verify-button::before{
+
+    content: "📝";
+    font-size: 1.5em;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    opacity: 0;
+    transition: opacity .2s, top.2s ease-out;
+}
+
+#verify-button:hover::before{
+
+    top: 0%;
+    opacity: 1;
+}
+
+#reset-button{
+
+    background-color: rgba(241, 163, 173, 0.5);
+    outline: 2px solid rgb(226, 17, 17);
+    position: relative;
+
+}
+
+#reset-button::before{
+
+    content: "🧹";
+    font-size: 1.8em;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    opacity: 0;
+    transition: opacity .2s, top .2s ease-out;
+}
+
+#reset-button:hover::before{
+
+    opacity: 1;
+    top: 0%;
+}
+
+
+#verify-button:hover, #reset-button:hover{
+
+    background-color: white;
+ 
+}

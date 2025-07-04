@@ -1,0 +1,308 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, body, div, main{
+
+ 
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*** HEADER ****/
+.header{
+
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    z-index: 10;
+ 
+
+}
+
+.container__img{
+
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ 
+}
+
+.img__item{
+
+    width: 30%;
+    border-radius: 50px;
+    
+}
+
+.span{
+    text-align: center;
+}
+
+#btn__description{
+
+    position: relative;
+    padding: 8px 15px;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    
+}
+
+#btn__description:hover{
+
+    color: aqua;
+}
+
+.text{
+
+    display: flex;
+    position: absolute;
+    width: 25vw;
+    height: 0;
+    opacity: 0;
+    padding: 10px 20px;
+    line-height: 1.5;
+    border-radius: 0 15px 15px 15px;
+    z-index: 10;
+    margin-top: 10px;
+
+}
+
+#text.active {
+  height: auto; 
+  opacity: 1;
+  transition:  height 0.2s ease-in, opacity 0.3s ease-in;
+ 
+}
+
+/**THEME**/
+
+.theme{
+
+    position: fixed;
+    width: 9vw;
+    top: 40vh;
+    left: -7vw;
+    text-align: center;
+    cursor: pointer;
+    transition: left 0.2s ease-in-out;
+    line-height: 2;
+    
+}
+
+.theme p{
+  
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px;
+}
+
+.theme:hover{
+    
+    left: 0;
+}
+
+.tema__list{
+
+    width: 100%;
+    text-align: center;
+}
+
+.tema__list > li{
+
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+ 
+}
+
+/**AUDIO**/
+
+.container__audio{
+
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+ 
+}
+
+.audio__item{
+
+    width: 95%;
+   
+}
+
+/***MAIN***/
+
+.main{
+
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 130px;
+}
+
+.main__container{
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 0;
+
+}
+
+.verse{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.letter__container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 60px;
+    padding:  10px;
+    margin-bottom: 15px;
+    border-radius: 10px; 
+    outline: 1px solid rgb(100, 89, 89);
+}
+
+.draggable{
+
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.9em;
+    cursor:  grab;
+    transition: transform 0.3s;
+    outline: 1px solid rgb(100, 89, 89);
+    user-select: none;
+    
+}
+
+.draggable:hover{
+
+    transform: translateY(-5px);
+    transition: transform 0.3s linear;
+ }
+
+
+.group__answer{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    gap: 10px;
+    
+}
+
+.dropzone{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    outline: 1px solid rgb(100, 89, 89);
+    
+    
+}
+ 
+.dropzone::before {
+
+    content: attr(data-placeholder);
+    pointer-events: none; 
+    letter-spacing: 2px;
+    position: absolute;
+    left: 5%;
+    font-size: 0.9em;
+    z-index: -1;
+  
+}
+
+
+/**----BOTON ESTROFAS---**/
+
+.button{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.verify__estrofa{
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition:  background-color 0.3s linear ;
+    cursor: pointer;
+}
+
+
+/**----BOTONES---**/
+
+.buttons{
+
+    margin-top: 30px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn{
+
+    border: none;
+    padding: 10px 20px;
+    min-width: 150px ;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+
+#verify-button{
+
+    transition:  background-color .6s;
+}
+
+
+#reset-button{
+
+    transition:  background-color .6s;
+
+}
+
+#verify-button:hover, #reset-button:hover{
+
+    transition:  background-color .6s;
+}
+
+
+
+

@@ -1,0 +1,210 @@
+:root{
+
+    --color-BGheader: rgba(36, 36, 36, 0.651);
+    --color-TCtext: black;
+    --color-TCheader:white;
+    --color-BGthemeP:rgb(233, 110, 79);
+    --color-TLli:rgb(231, 170, 146);
+    --color-BGdraggable: rgb(196, 243, 227) ;
+ 
+  
+}
+
+body{
+
+    background-image: url(../img/rojo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/*** HEADER ****/
+.header{
+
+    background-color:var(--color-BGheader);
+    color: var(--color-TCheader);
+  
+}
+
+.text{
+
+    background-color:rgb(235, 53, 53);
+    color:var(--color-TCtext);
+}
+
+/**THEME**/
+
+.theme p{
+  
+    background-color: var(--color-TCheader);
+    color: rgb(138, 18, 18);
+
+}
+
+.tema__list > li{
+    color: white;
+}
+
+.tema__list > li:hover{
+
+    background-color:rgb(138, 18, 18) ;
+   
+}
+ 
+/**AUDIO**/
+
+.container__audio{
+
+    background-color: var(--color-BGheader);
+    
+}
+
+/***MAIN***/
+
+.letter__container{
+
+    outline: 2px solid  rgb(138, 18, 18);
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.288);
+
+}
+
+.draggable{
+
+    background-color: var(--color-TCheader);
+    border: 2px solid rgb(192, 182, 182); 
+    position: relative;
+}
+
+
+.dropzone{
+
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.164);
+    outline:  2px solid white;
+
+}
+ 
+.dropzone::before {
+
+    color: white;
+    
+}
+
+
+
+/**----BOTON ESTROFAS---**/
+
+
+.verify__estrofa{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    outline: 2px solid   red;
+    background-color:  rgb(192, 10, 10);
+    transition:  background-color 0.3s linear ;
+    color: white;
+    overflow: hidden;
+   
+}
+
+.verify__estrofa::before{
+
+    content: " ";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.459);
+    border-radius: 50%;
+    transition: width .6s, height .6s;
+    
+}
+
+
+.verify__estrofa:hover::before{
+
+    width: 150%;
+    height: 300%;
+}
+
+.verify__estrofa:hover{
+
+    background-color: transparent;
+}
+
+
+/**----BOTONES---**/
+.btn{
+ 
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+
+.btn::before{
+
+    content: " ";
+    background-color: aliceblue;
+    width: 0%;
+    height: 2px;
+    font-size: 1.8em;
+    top: 120%;
+    position: absolute;
+    opacity: 1;
+    transition: width .6s, opacity .6s linear;
+}
+
+.btn:hover::before{
+
+    width: 110%;
+    opacity: 1;
+    animation: parpadeo 1s linear alternate infinite;
+    transition: top .6s, width .6s, opacity .6s linear;
+
+}
+
+ 
+
+@keyframes parpadeo{
+
+    to{
+ 
+        opacity: 0.3;
+       
+    }
+    from{
+
+    
+        opacity: 1;
+    }
+}
+
+#verify-button{
+
+    background-color: rgb(19, 18, 18);
+    outline: 2px solid var(--color-TCtext);
+
+}
+
+
+#reset-button{
+
+    background-color: rgb(192, 10, 10);
+    outline: 2px solid red;
+
+}
+
+#verify-button:hover, #reset-button:hover{
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+ 
+}

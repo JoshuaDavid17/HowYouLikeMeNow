@@ -1,0 +1,110 @@
+:root{
+
+    --color-BGheader: rgb(36, 36, 36);
+    --color-TCtext: black;
+    --color-TCheader:white;
+    --color-TLli:rgba(105, 230, 213, 0.596);
+    --color-BGdraggable: rgb(138, 233, 236) ;
+ 
+  
+}
+
+/*** HEADER ****/
+.header{
+
+    background-color:var(--color-BGheader);
+    color: var(--color-TCheader);
+
+}
+
+.text{
+
+    background-color:var(--color-BGdraggable) ;
+    color:var(--color-TCtext);
+}
+
+/**THEME**/
+
+.theme p{
+  
+    background-color:var(--color-BGdraggable) ;
+
+}
+
+.tema__list > li:hover{
+
+    outline: 3px solid var(--color-TLli);
+    background-color: rgba(127, 255, 212, 0.418);
+ 
+}
+ 
+/**AUDIO**/
+
+.container__audio{
+
+    background-color: var(--color-BGheader);
+    
+
+}
+
+/***MAIN***/
+
+.letter__container{
+
+    outline: 1px solid var(--color-TCtext);
+
+}
+
+.draggable{
+
+    background-color: var(--color-BGdraggable);
+    
+}
+
+.dropzone{
+
+    outline:  1px solid var(--color-TCtext);
+
+}
+ 
+
+
+/**----BOTON ESTROFAS---**/
+
+
+.verify__estrofa{
+
+    outline: 2px solid  rgb(7, 245, 7); ;
+    background-color: rgb(115, 250, 115);
+   
+}
+
+.verify__estrofa:hover{
+
+    background-color:  white;
+}
+
+
+/**----BOTONES---**/
+
+
+#verify-button{
+
+    background-color: rgb(163, 163, 241);
+    outline: 2px solid rgb(17, 20, 226);
+
+}
+
+
+#reset-button{
+
+    background-color: rgb(241, 163, 173);
+    outline: 2px solid rgb(226, 17, 17);
+
+}
+
+#verify-button:hover, #reset-button:hover{
+
+    background-color: white;
+ 
+}

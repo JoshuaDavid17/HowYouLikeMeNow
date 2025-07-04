@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <link id="theme__link" rel="stylesheet" href="css/tema1.css">
+    <link rel="icon" href="img/icon1.png"  type="image/x-icon">
+    <title>How You Like Me Now</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="description" id="description">
+
+            <P id="btn__description">Description</P>
+
+            <p class="text" id="text">
+                It is one of the most popular songs of the British band “The Heavy”. It was released in 2009 as part of
+                their second studio album, “The House That Dirt Built”. The song stands out for its mix of “rock, soul,
+                and funk” and became very popular in various media, such as movies, TV shows and commercials.
+            </p>
+        </div>
+        <div class="container__img">
+            <img src="img/logo.jpg" alt="" class="img__item">
+            <span class="span">The Heavy <br>How You Like Me Now?</span>
+        </div>
+
+        <div id="score">
+            <p>Score: 0 pts</p>
+        </div>
+
+    </header>
+
+    <div class="theme">
+        <p>THEME</p>
+
+        <div class="temas">
+            <ul class="tema__list">
+                <li class="tema__item">tema 1</li>
+                <li class="tema__item">tema 2</li>
+                <li class="tema__item">tema 3</li>
+                <li class="tema__item">tema 4</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container__audio">
+        <audio controls class="audio__item">
+            <source src="music/how you like me now.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <main class="main">
+
+        <div class="main__container">
+
+            <div class="verse"> <!--1-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="1">Now there was a time</div>
+                    <div class="draggable" draggable="true" data-order="2">when you loved me so</div>
+                    <div class="draggable" draggable="true" data-order="3">I couldn’t do wrong</div>
+                    <div class="draggable" draggable="true" data-order="4">and now you need to know</div>
+        
+                </div>
+
+                <div class="group__answer" data-estrofa="1">
+
+                    <div class="dropzone" data-correct-order="1"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="2"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="3"  data-placeholder="Thrid"></div>
+
+                    <div class="dropzone" data-correct-order="4"  data-placeholder="Fourth "></div>
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="1">Check Verse 1</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--2-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="5">See, I been a bad bad bad bad man.</div>
+                    <div class="draggable" draggable="true" data-order="6">And I'm in deep, yeah.</div>
+                    <div class="draggable" draggable="true" data-order="7">I found a brand new love for this man,</div>
+                    <div class="draggable" draggable="true" data-order="8">And can't wait till you see.</div>
+                    <div class="draggable" draggable="true" data-order="9">I can't wait.</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="2">
+
+                    <div class="dropzone" data-correct-order="5"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="6"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="7"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="8"  data-placeholder="Fourth "></div>
+
+                    <div class="dropzone" data-correct-order="9"  data-placeholder="fifth "></div>
+
+                </div>
+ 
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="2">Check Verse 2</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--3-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="10">So how you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="11">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="12">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="13">How you like me now?</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="3">
+
+                    <div class="dropzone" data-correct-order="10"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="11"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="12"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="13"  data-placeholder="Fourth "></div>
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="3">Check Verse 3</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--4-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="14">So how you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="15">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="16">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="17">How you like me now?</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="4">
+
+                    <div class="dropzone" data-correct-order="14"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="15"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="16"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="17"  data-placeholder="Fourth "></div>
+
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="4">Check Verse 4</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--5-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="18">Remember the time</div>
+                    <div class="draggable" draggable="true" data-order="19">When I eat you up</div>
+                    <div class="draggable" draggable="true" data-order="20">Yeah I was a lie</div>
+                    <div class="draggable" draggable="true" data-order="21">That you can't give up.</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="5">
+
+                    <div class="dropzone" data-correct-order="18"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="19"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="20"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="21"  data-placeholder="Fourth "></div>
+
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="5">Check Verse 5</button>
+
+                </div>
+
+            </div>
+
+            
+            <div class="verse"> <!--6-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="22">If I was to cheat</div>
+                    <div class="draggable" draggable="true" data-order="23">Oh no, would you see right through me?</div>
+                    <div class="draggable" draggable="true" data-order="24">If I sing a sad sad sad sad song</div>
+                    <div class="draggable" draggable="true" data-order="25">Would you give it to me? Would you?</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="6">
+
+                    <div class="dropzone" data-correct-order="22"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="23"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="24"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="25"  data-placeholder="Fourth "></div>
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="6">Check Verse 6</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--7-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="26">So how you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="27">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="28">How you like me now?</div>
+                    <div class="draggable" draggable="true" data-order="29">How you like me now?</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="7">
+
+                    <div class="dropzone" data-correct-order="26"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="27"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="28"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="29"  data-placeholder="Fourth "></div>
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="7">Check Verse 7</button>
+
+                </div>
+
+            </div>
+
+            <div class="verse"> <!--8-->
+
+                <div class="letter__container">
+
+                    <div class="draggable" draggable="true" data-order="30">Does that make you love me baby?</div>
+                    <div class="draggable" draggable="true" data-order="31">Does that make you want me baby?</div>
+                    <div class="draggable" draggable="true" data-order="32">Does that make you love me baby?</div>
+                    <div class="draggable" draggable="true" data-order="33">Does that make you want me baby?</div>
+
+                </div>
+
+                <div class="group__answer" data-estrofa="8">
+
+                    <div class="dropzone" data-correct-order="30"  data-placeholder="First"></div>
+
+                    <div class="dropzone" data-correct-order="31"  data-placeholder="Second"></div>
+
+                    <div class="dropzone" data-correct-order="32"  data-placeholder="Thrid"></div>
+                    
+                    <div class="dropzone" data-correct-order="33"  data-placeholder="Fourth "></div>
+
+                </div>
+
+                <!-- Botón para verificar solo la primera estrofa -->
+                <div class="button">
+
+                    <button class="verify__estrofa" data-estrofa="8">Check Verse 8</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button class="btn" id="verify-button">Total score</button>
+            <button class="btn" id="reset-button">Reset</button>
+
+        </div>
+
+    </main>
+
+    <script src="script/menu.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>

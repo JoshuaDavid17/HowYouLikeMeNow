@@ -1,0 +1,231 @@
+:root{
+
+    --color-BGtext:rgb(223, 209, 209);
+    --color-TCtext: black;
+    --color-TCheader:white;
+
+}
+
+body{
+
+    background-image: url(../img/fondo5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+   
+}
+
+body::before{
+
+    content: " ";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.49) ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/*** HEADER ****/
+.header{
+
+    background-color:rgba(36, 36, 36, 0.425);
+    color: var(--color-TCheader);
+
+}
+
+.text{
+
+    background-color:var(--color-BGtext) ;
+    color:var(--color-TCtext);
+}
+
+/**THEME**/
+
+.theme p{
+  
+    background-color: rgb(223, 14, 160);
+    box-shadow: 0 0 8px 3px rgb(236, 1, 178);
+    color: white;
+    
+
+}
+
+.tema__list > li{
+
+    color: white;
+}
+
+.tema__list > li:hover{
+
+    box-shadow: inset  0 0 5px 2px rgb(238, 137, 213);
+    background-color: rgba(0, 0, 0, 0.562);
+   
+   
+}
+ 
+/**AUDIO**/
+
+.container__audio{
+
+    background-color:rgba(36, 36, 36, 0.425);
+    
+}
+
+/***MAIN***/
+
+.letter__container{
+
+    outline: 2px solid  rgb(223, 14, 160);
+    /*comentar box shadow*/
+    box-shadow: 0 0 15px 10px  rgba(243, 7, 172, 0.541);
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.466) ;
+    animation: border 4s infinite alternate;
+
+}
+
+.draggable{
+
+    background-color: rgb(238, 137, 213);
+    
+}
+
+.dropzone{
+ 
+    backdrop-filter: blur(2px);
+    /*comentar box shadow*/
+    box-shadow: 0 0 15px 10px  rgba(243, 7, 172, 0.541);
+    background-color: rgba(0, 0, 0, 0.466) ;
+    outline:  2px solid  rgb(223, 14, 160);
+    position: relative;
+    animation: border 4s infinite alternate ;
+
+}
+
+.dropzone::before{
+
+    color: white;
+}
+
+/*Aqui va el contenido a comentar*/
+/*Descomentar keyframes
+@keyframes border {
+        
+    100%{
+
+        box-shadow: 0 0 20px 10px  rgba(243, 7, 172, 0.541);
+    }
+}*/
+
+
+/**----BOTON ESTROFAS---**/
+
+
+.verify__estrofa{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(223, 14, 160) ;
+    transition:  background-color 0.3s linear ;
+    color: white;
+  
+   
+}
+
+.verify__estrofa::before{
+
+    content: "►";
+    font-size: 1.8em;
+    color:  rgb(223, 14, 160) ;
+    position: absolute;
+    left: -40%;
+    opacity: 0;
+    transition: left .5s, opacity .5s;
+    
+}
+
+
+.verify__estrofa:hover::before{
+
+    left: -25%;
+    opacity: 1;
+    animation: flecha 0.8s infinite alternate;
+}
+
+@keyframes flecha {
+
+    to{
+
+        text-shadow:0 0 10px  rgb(223, 14, 160), 0 0 20px  rgb(223, 14, 160), 0 0 40px  rgb(223, 14, 160)   ;
+    }
+
+    from{
+
+        text-shadow: 0 ;
+    }    
+}
+
+
+.verify__estrofa:hover{
+
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    outline: 2px solid rgb(151, 5, 107);
+}
+
+
+/**----BOTONES---**/
+.btn{
+ 
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    color: white;
+ 
+}
+
+.btn::before{
+
+    content: " ";
+    width: 130%;
+    height: 130%;
+    top: -10%;
+    left: -150%;
+    background-color: rgb(223, 14, 160);
+    position: absolute;
+    transition: left .4s linear;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    
+    left: -20%;
+
+}
+
+ 
+#verify-button{
+
+    outline: 2px solid rgb(17, 226, 52);
+
+}
+
+
+#reset-button{
+ 
+    outline: 2px solid rgb(226, 17, 17);
+
+}
+
+#verify-button:hover, #reset-button:hover{
+
+    background-color: transparent;
+    color: white;
+    outline: 2px solid white;
+    transition: color .6s;
+ 
+}
